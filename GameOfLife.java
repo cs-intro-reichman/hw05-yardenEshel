@@ -8,13 +8,13 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		String fileName = "hypnotic.dat";
+		String fileName = "line.dat";
 		//// Uncomment the test that you want to execute, and re-compile.
 		//// (Run one test at a time).
-		/// test1(fileName);
+		 test1(fileName);
 		//// test2(fileName);
 		//// test3(fileName, 3);
-		 play(fileName);
+		///play(fileName);
 	}
 	
 	// Reads the data file and prints the initial board.
@@ -179,9 +179,9 @@ public class GameOfLife {
 		{
 			for( int j = 1; j < arr[i].length-1;j++)
 			{
-				System.out.printf("%4d",arr[i][j]);
+				System.out.printf("  %d",arr[i][j]);
 			}
-			System.out.print("\n\n");
+			System.out.printf("%n");
 		}
 	}
 		
@@ -215,6 +215,6 @@ public class GameOfLife {
 			}
 		}
 		StdDraw.show();
-		StdDraw.pause(10); 
+		StdDraw.pause(100); 
 	}
 }
